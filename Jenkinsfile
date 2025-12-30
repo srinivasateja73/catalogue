@@ -3,6 +3,7 @@ pipeline {
         node {
         }
     }
+}
     environment {
         COURSE = "Jenkins"
         appVersion = ""
