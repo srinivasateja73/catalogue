@@ -26,13 +26,14 @@ pipeline {
             }
         }
 
-        // stage('Install Dependencies') {
-        //     steps {
-        //         sh '''
-        //             echo "building"
-        //         '''
-        //     }
-        // }
+        stage('Install Dependencies') {
+            steps {
+                script{
+                sh """
+                    npm install
+                """
+                }
+            }
 
         // stage('Unit Test') {
         //     steps {
